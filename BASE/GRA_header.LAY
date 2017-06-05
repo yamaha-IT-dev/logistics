@@ -1,0 +1,51 @@
+  XLAYOUTF                                             *****     F I L E   L A Y O U T     *****                                  12/04/05  11:03:35   PG.   1
+  Library : YGQFLIB      File : BFTEP      RETURN RECEPT HEADER FILE
+ =============================================================================================================================================================
+  No  From ... To  Field      Type    Length   Field  Text                                        Column Heading 1    Column Heading 2    Column Heading 3
+ =============================================================================================================================================================
+   1     1 -    1  BTSKKI     A  1         1   DELETE FLAG                                        DELETE FLAG
+   2     2 -    7  BTUSNO     S  6  0      6   JOB NO.                                            JOB NO.
+   3     8 -    9  BTOPEC     A  2         2   OPERATOR CODE                                      OPERATOR CODE
+   4    10 -   12  BTKASC     A  3         3   COMPANY CODE                                       COMPANY CODE
+   5    13 -   14  BTSTCD     A  2         2   BRANCH CODE                                        BRANCH CODE
+   6    15 -   20  BTHYNO     A  6         6   RETURN RECEPT NO.                                  RETURN RECEPT NO.
+   7    21 -   26  BTURKC     A  6         6   DEALER CODE FIRST 6                                DEALER CODE FIRST 6
+   8    27 -   29  BTJURC     A  3         3   SALE-TO DEALER SUFFI                               SALE-TO DEALER SUFFI
+   9    30 -   32  BTHSRC     A  3         3   SHIP-TO DEALER SUFFI                               SHIP-TO DEALER SUFFI
+  10    33 -   35  BTSSRC     A  3         3   MAIL-TO DEALER SUFFI                               MAIL-TO DEALER SUFFI
+  11    36 -   38  BTSKRC     A  3         3   BILL-TO SUFFIX                                     BILL-TO SUFFIX
+  12    39 -   40  BTKIJC     A  2         2   BRANCH CODE FOR EXTERNAL SALES                     BRANCH CODE;FOR EXTERNAL SALES
+  13    41 -   41  BTKOKZ     A  1         1   DEALER TYPE                                        DEALER TYPE
+  14    42 -   42  BTSGKB     S  1  0      1   DEALER SUNDRY FLAG                                 DEALER SUNDRY FLAG
+  15    43 -   44  BTRIYC     A  2         2   REASON CODE                                        REASON CODE
+  16    45 -   48  BTAHYY     S  4  0      4   LOAN RETURN DATE YY                                LOAN RETURN DATE;YY
+  17    49 -   50  BTAHYM     S  2  0      2   LOAN RETURN DATE MM                                LOAN RETURN DATE;MM
+  18    51 -   52  BTAHYD     S  2  0      2   LOAN RETURN DATE DD                                LOAN RETURN DATE;DD
+  19    53 -   56  BTSKJY     S  4  0      4   SHIP DATE YY                                       SHIP DATE YY
+  20    57 -   58  BTSKJM     S  2  0      2   SHIP DATE MM                                       SHIP DATE MM
+  21    59 -   60  BTSKJD     S  2  0      2   SHIP DATE DD                                       SHIP DATE DD
+  22    61 -   68  BTHSNO     A  8         8   SHIPPING NO.                                       SHIPPING NO.
+  23    69 -   74  BTTRTB     S  6  0      6   REGISTRATION DATE                                  REGISTRATION DATE
+  24    75 -   80  BTTRTJ     S  6  0      6   REGISTRATION TIME                                  REGISTRATION TIME
+  25    81 -   86  BTKOYY     S  6  0      6   UPDATE DATE                                        UPDATE DATE
+  26    87 -   92  BTKOJK     S  6  0      6   UPDATE TIME                                        UPDATE TIME
+  27    93 -   93  BTHSCC     A  1         1   CONDITION CODE                                     CONDITION CODE
+  28    94 -   94  BTRTST     S  1  0      1   RETURN STATUS                                      RETURN STATUS
+  29    95 -   95  BTRTPF     S  1  0      1   RETURN NOTE PRINT FLAG                             RETURN NOTE         PRINT FLAG
+  30    96 -   96  BTHTYP     S  1  0      1   RETURN TYPE                                        RETURN TYPE
+  31    97 -  116  BTNICM     A 20        20   INTERNAL COMMENT                                   INTERNAL COMMENT
+  32   117 -  136  BTGICM     A 20        20   EXTERNAL COMMENT                                   EXTERNAL COMMENT
+  33   137 -  143  BTOINN     S  7  0      7   ORIGINAL INVOICE NO..                              ORIGINAL INVOICE NO.;.
+  34   144 -  146  BTUSGR     A  3         3   CARRIER CODE                                       CARRIER CODE
+  35   147 -  152  BTSKN2     A  6         6   SHIP NUMBER (loan goods)                           SHIP NUMBER;(loan goods)
+  36   153 -  172  BTATT1     A 20        20   CONTACT PERSON (SALES ORDER)                       CONTACT PERSON;(SALES ORDER)
+  37   173 -  178  BTASFN     A  6         6   FORM NO. FOR LOAN AP                               FORM NO. FOR LOAN AP
+  38   179 -  181  BTSCNO     A  3         3   RECEIVING WAREHSE CO                               RECEIVING WAREHSE CO
+  39   182 -  183  BTSOGC     A  2         2   SALES ORDER GROUP CODE                             SALES ORDER GROUP CODE
+  40   184 -  185  BTCMTE     A  2         2   EXTERNAL COMMENT CODE                              EXTERNAL COMMENT CODE
+  41   186 -  187  BTCMTI     A  2         2   INTERNAL COMMENT CODE                              INTERNAL COMMENT CODE
+  42   188 -  191  BTRRDY     S  4  0      4   RETURN RECEPT DATE (YEAR)                          RETURN RECEPT DATE  (YEAR)
+  43   192 -  193  BTRRDM     S  2  0      2   RETURN RECEPT DATE (MONTH)                         RETURN RECEPT DATE  (MONTH)
+  44   194 -  195  BTRRDD     S  2  0      2   RETURN RECEPT DATE (DAY)                           RETURN RECEPT DATE  (DAY)
+  * * *  E N D  O F  R E P O R T  * * *
+

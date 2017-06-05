@@ -1,0 +1,6 @@
+update yma_item set invoice_no = '749417' where owner = 'stevenv' and item_group = '403' and category = 'Vox' and origin = 'Kagan'
+
+update yma_item set date_modified = '2011-06-14 16:00:32.620' where owner = 'stevenv' and item_group = '403' and category = 'Vox' and origin = 'Kagan'
+
+update yma_item set modified_by = 'johannas' where owner = 'stevenv' and item_group = '403' and category = 'Vox' and origin = 'Kagan'
+

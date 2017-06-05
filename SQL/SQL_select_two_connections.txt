@@ -1,0 +1,16 @@
+'TEST - DID NOT WORK
+select * from openquery(YGRUMBATS, 'select * From ofpap')
+
+
+'LIVE
+select * from openquery(s1027cfg, 'select * From ofpap')
+
+'LIVE TEST
+select * from openquery(s1027cfg, 'select * From ofpap_test')
+
+
+select * from openquery(s1027cfg, 'select * From ofpap') a
+inner join openquery(as400, 'select * from bfuep') b
+
+select * from openquery(as400, 'select * from bfuep')
+select * from yma_gra_report

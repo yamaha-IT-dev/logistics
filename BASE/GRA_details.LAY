@@ -1,0 +1,93 @@
+  XLAYOUTF                                             *****     F I L E   L A Y O U T     *****                                  12/04/05  11:03:36   PG.   1
+  Library : YGQFLIB      File : BFUEP      RETURN RECEPT DETAIL FILE
+ =============================================================================================================================================================
+  No  From ... To  Field      Type    Length   Field  Text                                        Column Heading 1    Column Heading 2    Column Heading 3
+ =============================================================================================================================================================
+   1     1 -    1  BUSKKI     A  1         1   DELETE FLAG                                        DELETE FLAG
+   2     2 -    7  BUUSNO     S  6  0      6   JOB NO.                                            JOB NO.
+   3     8 -    9  BUOPEC     A  2         2   OPERATOR CODE                                      OPERATOR CODE
+   4    10 -   12  BUKASC     A  3         3   COMPANY CODE                                       COMPANY CODE
+   5    13 -   14  BUSTCD     A  2         2   BRANCH CODE                                        BRANCH CODE
+   6    15 -   20  BUHYNO     A  6         6   RETURN RECEPT NO.                                  RETURN RECEPT NO.
+   7    21 -   23  BUHYGY     S  3  0      3   RETURN RECEPT LINE NO.                             RETURN RECEPT LINE ;NO.
+   8    24 -   25  BUSTJN     A  2         2   SET SEQUENCE                                       SET SEQUENCE
+   9    26 -   26  BUSTSK     S  1  0      1   SET SHIPMENT FLAG                                  SET SHIPMENT FLAG
+  10    27 -   32  BUURKC     A  6         6   DEALER CODE FIRST 6                                DEALER CODE FIRST 6
+  11    33 -   35  BUJURC     A  3         3   SALE-TO DEALER SUFFI                               SALE-TO DEALER SUFFI
+  12    36 -   38  BUHSRC     A  3         3   SHIP-TO DEALER SUFFI                               SHIP-TO DEALER SUFFI
+  13    39 -   41  BUSSRC     A  3         3   MAIL-TO DEALER SUFFI                               MAIL-TO DEALER SUFFI
+  14    42 -   44  BUSKRC     A  3         3   BILL-TO SUFFIX                                     BILL-TO SUFFIX
+  15    45 -   59  BUSOSC     A 15        15   ITEM CODE                                          ITEM CODE
+  16    60 -   66  BUGREG     A  7         7   ITEM GROUP CODE FOR SALES                          ITEM GROUP CODE;FOR SALES
+  17    67 -   67  BUMSTK     S  1  0      1   OVERRIDE FLAG F. ITEM MODEL NA                     OVERRIDE FLAG F.;ITEM MODEL NAME&SPEC
+  18    68 -   82  BUMDTM     A 15        15   ITEM MODEL NAME ENTERED                            ITEM MODEL NAME;ENTERED
+  19    83 -  102  BUSYMT     A 20        20   ITEM SPECIFICATION (MANAUL OVE                     ITEM SPECIFICATION;(MANAUL OVERRIDE)
+  20   103 -  105  BUSOMC     A  3         3   ITEM NAME CODE                                     ITEM NAME CODE
+  21   106 -  107  BUSTKS     S  2  0      2   SET COMPONENT QTY                                  SET COMPONENT QTY
+  22   108 -  110  BUHYSU     P  5  0      3   RETURN RECEPT QUANTITY                             RETURN RECEPT QUANT;ITY
+  23   111 -  113  BUHUSU     P  5  0      3   RETURN ACCEPT NO.                                  RETURN ACCEPT NO.
+  24   114 -  128  BUSIBN     A 15        15   SERIAL NUMBER                                      SERIAL NUMBER
+  25   129 -  130  BURIYC     A  2         2   REASON CODE                                        REASON CODE
+  26   131 -  134  BUAHYY     S  4  0      4   LOAN RETURN DATE YY                                LOAN RETURN DATE;YY
+  27   135 -  136  BUAHYM     S  2  0      2   LOAN RETURN DATE MM                                LOAN RETURN DATE;MM
+  28   137 -  138  BUAHYD     S  2  0      2   LOAN RETURN DATE DD                                LOAN RETURN DATE;DD
+  29   139 -  142  BUSKJY     S  4  0      4   SHIP DATE YY                                       SHIP DATE YY
+  30   143 -  144  BUSKJM     S  2  0      2   SHIP DATE MM                                       SHIP DATE MM
+  31   145 -  146  BUSKJD     S  2  0      2   SHIP DATE DD                                       SHIP DATE DD
+  32   147 -  154  BUHSNO     A  8         8   SHIPPING NO.                                       SHIPPING NO.
+  33   155 -  157  BUHSGY     S  3  0      3   SHIPPIMG LINE NO.                                  SHIPPIMG LINE NO.
+  34   158 -  161  BUAHJY     S  4  0      4   LOAN RETURNED DATE YY                              LOAN RETURNED DATE;YY
+  35   162 -  163  BUAHJM     S  2  0      2   LOAN RETURNED DATE MM                              LOAN RETURNED DATE;MM
+  36   164 -  165  BUAHJD     S  2  0      2   LOAN RETURNED DATE DD                              LOAN RETURNED DATE;DD
+  37   166 -  185  BUCOMT     A 20        20   COMMENT                                            COMMENT
+  38   186 -  191  BUTRTB     S  6  0      6   REGISTRATION DATE                                  REGISTRATION DATE
+  39   192 -  197  BUTRTJ     S  6  0      6   REGISTRATION TIME                                  REGISTRATION TIME
+  40   198 -  203  BUKOYY     S  6  0      6   UPDATE DATE                                        UPDATE DATE
+  41   204 -  209  BUKOJK     S  6  0      6   UPDATE TIME                                        UPDATE TIME
+  42   210 -  210  BUHSCC     A  1         1   CONDITION CODE                                     CONDITION CODE
+  43   211 -  230  BUNICM     A 20        20   INTERNAL COMMENT                                   INTERNAL COMMENT
+  44   231 -  250  BUGICM     A 20        20   EXTERNAL COMMENT                                   EXTERNAL COMMENT
+  45   251 -  257  BUOINN     S  7  0      7   ORIGINAL INVOICE NO..                              ORIGINAL INVOICE NO.;.
+  46   258 -  260  BUOING     S  3  0      3   ORIGINAL INVOICE LINE NO.                          ORIGINAL INVOICE LIN;E NO.
+  47   261 -  261  BUPTUK     S  1  0      1   PRICE OVERRIDE FLAG                                PRICE OVERRIDE FLAG
+  48   262 -  269  BUPRCG     P 15  2      8   PRICE (GROSS)                                      PRICE (GROSS)
+  49   270 -  277  BUPRCN     P 15  2      8   PRICE (NET)                                        PRICE (NET)
+  50   278 -  285  BUKNGK     P 15  2      8   AMOUNT                                             AMOUNT
+  51   286 -  286  BUDTCK     S  1  0      1   DISCOUNT OVERRIDE FLG                              DISCOUNT OVERRIDE FLG
+  52   287 -  287  BUHDKK     S  1  0      1   STD DISC. CALC. FLAG                               STD DISC. CALC. FLAG
+  53   288 -  290  BUHDSK     P  5  2      3   STD FIXED DISC. RATE                               STD FIXED DISC. RATE
+  54   291 -  293  BUHDSS     P  5  2      3   STD Q TY DISC. RATE                                STD Q TY DISC. RATE
+  XLAYOUTF                                             *****     F I L E   L A Y O U T     *****                                  12/04/05  11:03:36   PG.   2
+  Library : YGQFLIB      File : BFUEP      RETURN RECEPT DETAIL FILE
+ =============================================================================================================================================================
+  No  From ... To  Field      Type    Length   Field  Text                                        Column Heading 1    Column Heading 2    Column Heading 3
+ =============================================================================================================================================================
+  55   294 -  294  BUTDKK     S  1  0      1   SPECIAL DISCOUNT CALCULATION F                     SPECIAL DISCOUNT;CALCULATION FLAG
+  56   295 -  297  BUTDSR     P  5  2      3   SPECIAL DISCOUNT RATE                              SPECIAL DISCOUNT;RATE
+  57   298 -  300  BUGODR     P  5  2      3   TOTAL DISCOUNT RATE                                TOTAL DISCOUNT RATE
+  58   301 -  308  BUKNGD     P 15  2      8   TOTAL DISCOUNT AMOUN                               TOTAL DISCOUNT AMOUN
+  59   309 -  311  BUTRHG     A  3         3   TRADE CURRENCY CODE (EXTERNAL                      TRADE CURRENCY CODE;(EXTERNAL SALES)
+  60   312 -  312  BUSLMK     S  1  0      1   SALESMAN CD. MANUAL OVERRIDE F                     SALESMAN CD. MANUAL ;OVERRIDE F
+  61   313 -  314  BUSLMC     A  2         2   SALES REP. CODE                                    SALES REP. CODE
+  62   315 -  320  BUSKN2     A  6         6   SHIP NUMBER (loan goods)                           SHIP NUMBER;(loan goods)
+  63   321 -  323  BUSKG2     S  3  0      3   SHIP LINE NUMBER                                   SHIP LINE NUMBER
+  64   324 -  324  BURTST     S  1  0      1   RETURN STATUS                                      RETURN STATUS
+  65   325 -  325  BURTPF     S  1  0      1   RETURN NOTE PRINT FLAG                             RETURN NOTE         PRINT FLAG
+  66   326 -  326  BUHTYP     S  1  0      1   RETURN TYPE                                        RETURN TYPE
+  67   327 -  333  BUFPNO     S  7  0      7   FLOOR PLAN NO.                                     FLOOR PLAN NO.
+  68   334 -  339  BUCLMN     A  6         6   CLAIM NO.                                          CLAIM NO.
+  69   340 -  341  BUSOGC     A  2         2   SALES ORDER GROUP CODE                             SALES ORDER GROUP CODE
+  70   342 -  343  BUCMTE     A  2         2   EXTERNAL COMMENT CODE                              EXTERNAL COMMENT CODE
+  71   344 -  345  BUCMTI     A  2         2   INTERNAL COMMENT CODE                              INTERNAL COMMENT CODE
+  72   346 -  346  BUHSOC     A  1         1   ORIGINAL CONDITION CODE                            ORIGINAL CONDITION CODE
+  73   347 -  354  BUPDDT     P 15  2      8   PRICE(WITH DEALER LEVEL DISCOUNT)TRADE CURRENCY    PRICE(WITH DEALER   LEVEL DISCOUNT)     TRADE CURRENCY
+  74   355 -  357  BUPD1R     P  5  2      3   PROMOTION DISCOUNT1 RATE                           PROMOTION DISCOUNT  RATE
+  75   358 -  358  BUPD2T     S  1  0      1   PROMOTION DISCOUNT2 OVERRIDE FLAG                  PROMOTION DISCOUNT2 OVERRIDE FLAG
+  76   359 -  361  BUPD2R     P  5  2      3   PROMOTION DISCOUNT2 RATE                           PROMOTION DISCOUNT2 RATE
+  77   362 -  369  BUPD2K     P 15  2      8   PROMOTION DISCOUNT2 AMOUNT                         PROMOTION DISCOUNT2 AMOUNT
+  78   370 -  372  BUDADR     P  5  2      3   C.O.D. DISCOUNT RATE                               C.O.D. DISCOUNT RATE
+  79   373 -  380  BUSDKT     P 15  2      8   PAYMENT DISCOUNT AMOUNTTRADE CURRENCY              PAYMENT DISCOUNT    AMOUNT TRADE CURR
+  80   381 -  388  BUSDKB     P 15  2      8   PAYMENT DISCOUNT AMOUNTBASE CURRENCY               PAYMENT DISCOUNT    AMOUNT BASE CURRENCY
+  81   389 -  391  BUSCNO     A  3         3   RECEIVING WAREHSE CO                               RECEIVING WAREHSE CO
+  * * *  E N D  O F  R E P O R T  * * *
+

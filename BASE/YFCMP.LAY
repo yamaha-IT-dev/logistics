@@ -1,0 +1,18 @@
+  XLAYOUTF                                             *****     F I L E   L A Y O U T     *****                                  12/04/05  11:23:31   PG.   1
+  Library : YGQFLIB      File : YFCMP      COMMON CODE MASTER FILE
+ =============================================================================================================================================================
+  No  From ... To  Field      Type    Length   Field  Text                                        Column Heading 1    Column Heading 2    Column Heading 3
+ =============================================================================================================================================================
+   1     1 -    1  YCSKKI     A  1         1   DELETE FLAG                                        DELETE FLAG
+   2     2 -    7  YCUSNO     S  6  0      6   JOB NO.                                            JOB NO.
+   3     8 -   10  YCKASC     A  3         3   COMPANY CODE                                       COMPANY CODE
+   4    11 -   14  YCKBID     A  4         4   COMMON CODE ID                                     COMMON CODE ID
+   5    15 -   17  YCKBCD     A  3         3   COMMON CODE                                        COMMON CODE
+   6    18 -   47  YCKBMB     A 30        30   COMMON CODE NAME (LOCAL LANGUA                     COMMON CODE NAME;(LOCAL LANGUAGE)
+   7    48 -   77  YCKBME     A 30        30   COMMON CODE NAME (ENGLISH)                         COMMON CODE NAME;(ENGLISH)
+   8    78 -   83  YCTRTB     S  6  0      6   REGISTRATION DATE                                  REGISTRATION DATE
+   9    84 -   89  YCTRTJ     S  6  0      6   REGISTRATION TIME                                  REGISTRATION TIME
+  10    90 -   95  YCKOYY     S  6  0      6   UPDATE DATE                                        UPDATE DATE
+  11    96 -  101  YCKOJK     S  6  0      6   UPDATE TIME                                        UPDATE TIME
+  * * *  E N D  O F  R E P O R T  * * *
+

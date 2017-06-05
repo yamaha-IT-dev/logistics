@@ -1,0 +1,7 @@
+SELECT     dbo.yma_user.usertypeid, dbo.yma_user.customerid, dbo.yma_user.id AS yamaha_user_id, dbo.yma_user.username, dbo.yma_user.password, dbo.yma_user.logincount, 
+                      dbo.yma_user.datelastlogin, dbo.yma_user.datecreated, dbo.yma_customer.title, dbo.yma_customer.firstname, dbo.yma_customer.lastname, 
+                      dbo.yma_customer.address, dbo.yma_customer.city, dbo.yma_customer.state, dbo.yma_customer.country, dbo.yma_customer.postcode, 
+                      dbo.yma_customer.phone, dbo.yma_customer.email, dbo.yma_customer.id AS customer_id
+FROM         dbo.yma_user INNER JOIN
+                      dbo.yma_customer ON dbo.yma_user.customerid = dbo.yma_customer.id
+WHERE     (dbo.yma_user.usertypeid = 8) OR (dbo.yma_user.usertypeid = 9)

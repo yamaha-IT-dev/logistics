@@ -1,0 +1,101 @@
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS ON 
+GO
+
+CREATE PROCEDURE spAddChangeover
+
+@strCustomer		NVARCHAR(255),
+@strContactPerson	NVARCHAR(255),
+@strPhone		NVARCHAR(255),
+@strMobile		NVARCHAR(255),
+@strAddress		NVARCHAR(255),
+@strcity		NVARCHAR(255),
+@strState		NVARCHAR(255),
+@strPostcode		NVARCHAR(255),
+@strOldModel		NVARCHAR(255),
+@strOldModelSerial	NVARCHAR(255),
+@intProof		NUMERIC,
+@intWarranty		NUMERIC,
+@strReplacementModel	NVARCHAR(255),
+@strMakeUpCost		NVARCHAR(255),
+@strReplacementDestination NVARCHAR(255),
+@strDateReceived	NVARCHAR(255),
+@strDatePayment		NVARCHAR(255),
+@strInvoiceNo		NVARCHAR(255),
+@strCreatedBy		NVARCHAR(255),
+@strComments		NVARCHAR(255)
+
+AS
+
+BEGIN
+
+	-- We first have to check if the changeover already exists
+	IF EXISTS(SELECT * FROM yma_changeover WHERE customer = @strCustomer AND contact_person = @strContactPerson)
+		BEGIN
+			RAISERROR('spAddJob: This changeover already exists.', 12, 12)
+			RETURN(@@error)
+		END
+	ELSE
+
+	BEGIN
+		INSERT INTO yma_changeover (
+			customer, 
+			contact_person, 
+			phone, 
+			mobile, 
+			address, 
+			city, 
+			state, 
+			postcode, 
+			old_model, 
+			old_model_serial, 
+			proof, 
+			warranty, 
+			replacement_model, 
+			make_up_cost, 
+			replacement_destination, 
+			date_received, 
+			date_payment, 
+			invoice_no, 		 
+			created_by, 
+			comments, 
+			status,
+			date_created)
+		VALUES (
+			@strCustomer,
+			@strContactPerson,
+			@strPhone,
+			@strMobile,
+			@strAddress,
+			@strcity,
+			@strState,
+			@strPostcode,
+			@strOldModel,
+			@strOldModelSerial,
+			@intProof,
+			@intWarranty,
+			@strReplacementModel,
+			@strMakeUpCost,
+			@strReplacementDestination,
+			@strDateReceived,
+			@strDatePayment,
+			@strInvoiceNo,		
+			@strCreatedBy,
+			@strComments,
+			1,
+			getDate())
+
+		IF @@ERROR <> 0 
+			BEGIN
+				RAISERROR('spAddChangeover: An error occured while trying to save review details.', 12, 12)
+				RETURN(@@error)
+			END
+	END
+END
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+

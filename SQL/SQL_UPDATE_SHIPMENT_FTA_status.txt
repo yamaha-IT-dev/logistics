@@ -1,0 +1,8 @@
+
+update yma_shipment set fta_status = '0' where shipment_id = '2413'
+update yma_shipment set fta_certificate_origin = '0' where shipment_id = '2413'
+update yma_shipment set fta_certificate_origin_date = null where shipment_id = '2413'
+
+
+
+select fta_status from yma_shipment where shipment_id = '2435'
