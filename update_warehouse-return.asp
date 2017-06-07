@@ -154,7 +154,7 @@ sub updateReturn
 	strReturnCarrier 	= Request.Form("cboReturnCarrier")
 	strReturnConnote 	= Request.Form("txtReturnConnote")
 	strOriginalConnote 	= Request.Form("txtOriginalConnote")
-	strDealer 			= Request.Form("txtDealer")
+	strDealer 			= Replace(Replace(Request.Form("txtDealer"), "'", "''"), " ", " ")
 	intReasonCode 		= Request.Form("cboReasonCode")
 	intInstruction 		= Request.Form("cboInstruction")
 	strSerialNo 		= Request.Form("txtSerialNo")
